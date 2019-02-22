@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="Prompt()">Prompt</button>
+
+<button onclick="Alert()">Alert</button>
+
+<button onclick="Confirm()">Confirm</button>
+
+<p id="demo"></p>
+
+<script>
+function Prompt() {
+  var person = prompt("Please enter your name", "Yatharth Dubey");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person;
+  }
+}
+function Alert(){
+	alert("You clicked alert button");
+}
+function Confirm(){
+	confirm("Press a button!");
+}
+</script>
+
+</body>
+</html>

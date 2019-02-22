@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script>
+		function Addition() {
+		  var x = parseInt(document.getElementById("txt1").value);
+		  var y = parseInt(document.getElementById("txt2").value);
+		  var z = x + y;
+		  document.getElementById("demo").innerHTML = z;
+		}
+	</script>
+</head>
+<body>
+	Enter first number:
+	<input type="text" id="txt1" name="text1">
+	Enter second number:
+	<input type="text" id="txt2" name="text2">
+	<p>
+	  <button onclick="Addition()">Add</button>
+	</p>
+<p id="demo"></p>
+</body>
+</html>

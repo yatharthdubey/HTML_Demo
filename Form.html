@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>First HTML Page</title>
+		<style>
+			input[type="email"]::placeholder {   
+					text-align: right; 
+            }
+			input[type="submit"] {   
+					align: right; 
+            }
+			
+			div{
+			float:right;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 align = "center">Create your Google Account</h1>
+		<table align = "center">
+		<form action = "post" >
+		<div>
+		<fieldset style = "background-color:lightgray">
+		<label for = "name" ><b>Name</b></label><br>
+		<input type = "text" name = "firstName" placeholder = "First" required />
+		<input type = "text" name = "lastName" placeholder = "Last" required /><br><br>
+		<label for = "username"><b>Choose your username<b></label><br>
+		<input type = "email" name = "username" placeholder = "@gmail.com" size = "45" required /><br>
+		<label style  = "color:blue">I prefer to use my current email address</label><br><br>
+		<label for = "password"><b>Create a password</b></label><br>
+		<input type = "password" name = "password" size = "45" required /><br><br>
+		<label for = "confirmPassword"><b>Confirm your password</b></label><br>
+		<input type = "password"  name = "confirmPassword" size = "45" required /><br><br>
+		<label for = "dateOfBirth"><b>Birthday<b></label><br>
+		<select required>
+		<option value=''>Month</option>
+		<option value='1'>Janaury</option>
+		<option value='2'>February</option>
+		<option value='3'>March</option>
+		<option value='4'>April</option>
+		<option value='5'>May</option>
+		<option value='6'>June</option>
+		<option value='7'>July</option>
+		<option value='8'>August</option>
+		<option value='9'>September</option>
+		<option value='10'>October</option>
+		<option value='11'>November</option>
+		<option value='12'>December</option>
+		</select>
+		<input type = "number" name = "dayOfBirthday" placeholder = "Day" min="1" max="31" size = "45" required />
+		<input type = "number" name = "yearOfBirthday" placeholder = "Year" min = "1919" max = "2019" size = "45" required /><br><br>
+		<label for = "gender"><b>Gender</b></label><br>
+		<select required>
+		<option value=''>I am...</option>
+		<option value='1'>Male</option>		
+		<option value='2'>FeMale</option>
+		<option value='3'>Others</option>
+		</select><br><br><br>
+		<label for = "mobileNumber"><b>Mobile phone</b></label><br>
+		<input type = "tel" name = "mobileNumber" maxlength = "10" size = "45"/><br><br>
+		<label for = "currentEmailAddress"><b>Your current email address</b></label><br>
+		<input type = "email" name = "currentEmailAddress" size = "45"/><br><br>
+		<label for = "location" ><b>Location</b></label><br>
+		<select required >
+		<option value = ''>Location</option>
+		<option selected value ='1'>United States</option>
+		<option value ='2'>India</option>
+		<option value ='3'>Honolulu</option>
+		<option value ='4'>Shaheed Nagar</option>
+		</select>
+		<br><br><input type = "submit" placeholder = "Next Step" align = "right"/>
+		</datalist>
+		</fieldset>
+		</div>
+		</form>
+		</table>
+		<img src = "C:\Users\YADUBEY\Documents\My Received Files\signup1.jpg" height="600" width="1000" style = "float:center" >
+	</body>
+</html>
